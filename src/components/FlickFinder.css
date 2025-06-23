@@ -1,0 +1,111 @@
+.flick-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.nav-button.left {
+  left: 30px;
+}
+
+.nav-button.right {
+  right: 30px;
+}
+
+.nav-button svg {
+  color: white;
+  font-size: 24px;
+}
+
+.text-content {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0 20px;
+}
+
+.text-content .head { /* Increased specificity by scoping to .text-content */
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.para1 {
+  margin: 5px 0;
+  color: white;
+  font-size: 1.2rem;
+  padding-left: 100px;
+}
+
+.discover {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.discover:hover {
+  background-color: #f0f0f0;
+}
+
+.discover:active {
+  transform: scale(0.95);
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot.active {
+  background: #26a69a;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.8);
+}

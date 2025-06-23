@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.bg {
+  background-color: #1A2525;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg .head {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #00C4B4;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.date-time {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tab-item {
+  margin: 0 10px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  background-color: #2A3A3A;
+  color: white;
+  border: 1px solid #00C4B4;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #3A4A4A;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  background-color: #2A3A3A;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.search-icon,
+.mic-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 10px;
+  filter: invert(1);
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-input::placeholder {
+  color: #ccc;
+}
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.movie-item {
+  background: #1A2525;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-details {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1A2525;
+}
+
+.movie-info {
+  flex-grow: 1;
+  color: white;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.type,
+.para {
+  margin: 5px 0;
+  color: white;
+  font-size: 0.9rem;
+  padding-left: 0;
+}
+
+.favourite-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: brightness(0.5);
+}
+
+.favourite-icon:hover {
+  opacity: 0.8;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.show-more-button,
+.show-less-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #2A3A3A;
+  color: white;
+  border: 1px solid #00C4B4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.show-more-button:hover,
+.show-less-button:hover {
+  background-color: #3A4A4A;
+}
+
+/* FAQ Styles */
+.faq-container {
+  width: 100%;
+  max-width: 800px; /* Limit width for readability */
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #1A2525;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Match movie card shadow */
+}
+
+.faq-heading {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2rem; /* Smaller than main heading */
+  color: #00C4B4; /* Teal */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.faq-list {
+  list-style: none;
+  padding: 0;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  background-color: #2A3A3A; /* Darker shade for questions */
+  color: white;
+  border: 1px solid #00C4B4; /* Teal border */
+  border-radius: 10px; /* Match movie card rounded corners */
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold; /* Match movie title boldness */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #3A4A4A; /* Slightly lighter on hover */
+}
+
+.faq-toggle-icon {
+  font-size: 1.2rem;
+  color: #00C4B4; /* Teal */
+}
+
+.faq-answer {
+  padding: 15px;
+  background-color: #3A4A4A; /* Slightly lighter than question */
+  color: white;
+  border-radius: 0 0 10px 10px; /* Rounded corners on bottom */
+  border: 1px solid #00C4B4;
+  border-top: none;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 0.9rem; /* Match movie details text size */
+}

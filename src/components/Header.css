@@ -1,0 +1,40 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box; 
+  border: 1px solid;
+  border-color: #26a69a;
+}
+
+.logo {
+  color: white;
+  font-size: 1.8rem; /* Slightly larger font for the logo */
+  font-weight: bold;
+  margin: 0; /* Remove default margin */
+}
+
+.logo span {
+  color: #26a69a; /* Teal color for "Flick" to match the image */
+}
+
+.nav-items {
+  display: inline-block;
+  margin-left: 30px; /* Increased spacing between nav items */
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem; /* Slightly larger font for nav links */
+  font-weight: 500; /* Medium weight for better readability */
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.nav-items a:hover {
+  color: #26a69a; /* Teal color on hover to match the logo */
+}
